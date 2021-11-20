@@ -1,6 +1,6 @@
 import React, { ReactNode, ReactElement } from 'react';
 import styled from 'styled-components';
-import { Flex, TooltipIcon } from '@replaceme/core';
+import { Flex, TooltipIcon } from '@goji/core';
 import {
   Box,
   Card,

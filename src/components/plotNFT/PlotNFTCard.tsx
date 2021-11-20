@@ -15,7 +15,7 @@ import {
   FormatLargeNumber,
   Link,
   ConfirmDialog,
-} from '@replaceme/core';
+} from '@goji/core';
 import {
   Box,
   Button,
@@ -39,7 +39,7 @@ import usePlotNFTDetails from '../../hooks/usePlotNFTDetails';
 import useOpenDialog from '../../hooks/useOpenDialog';
 import PoolJoin from '../pool/PoolJoin';
 import PoolAbsorbRewards from '../pool/PoolAbsorbRewards';
-import { mojo_to_replaceme } from '../../util/replaceme';
+import { moji_to_goji } from '../../util/goji';
 import { deleteUnconfirmedTransactions } from '../../modules/incoming';
 import PlotNFTGraph from './PlotNFTGraph';
 import PlotNFTGetPoolLoginLinkDialog from './PlotNFTGetPoolLoginLinkDialog';
@@ -150,7 +150,7 @@ export default function PlotNFTCard(props: Props) {
       label: <Trans>Unclaimed Rewards</Trans>,
       value: (
         <UnitFormat
-          value={mojo_to_replaceme(BigInt(balance))}
+          value={moji_to_goji(BigInt(balance))}
           state={State.SUCCESS}
         />
       ),

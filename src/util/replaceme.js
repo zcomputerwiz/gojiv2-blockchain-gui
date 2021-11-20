@@ -12,7 +12,7 @@ const convert = (amount, from, to) => {
   return Number.parseFloat(amountInFromUnit.div(units.getUnit(to)));
 };
 
-class replaceme {
+class goji {
   constructor(value, unit) {
     this._value = value;
     this._unit = unit;
@@ -73,42 +73,42 @@ class replaceme {
   }
 }
 
-export const replaceme_formatter = (value, unit) => new replaceme(value, unit);
+export const goji_formatter = (value, unit) => new goji(value, unit);
 
-replaceme_formatter.convert = convert;
-replaceme_formatter.setDisplay = units.setDisplay;
-replaceme_formatter.setUnit = units.setUnit;
-replaceme_formatter.getUnit = units.getUnit;
-replaceme_formatter.setFiat = (currency, rate, display = null) => {
+goji_formatter.convert = convert;
+goji_formatter.setDisplay = units.setDisplay;
+goji_formatter.setUnit = units.setUnit;
+goji_formatter.getUnit = units.getUnit;
+goji_formatter.setFiat = (currency, rate, display = null) => {
   units.setUnit(currency, 1 / rate, display);
 };
 
-export const mojo_to_replaceme = (mojo) => {
-  return replaceme_formatter(Number.parseInt(mojo), 'mojo').to('replaceme').value();
+export const moji_to_goji = (moji) => {
+  return goji_formatter(Number.parseInt(moji), 'moji').to('goji').value();
 };
 
-export const replaceme_to_mojo = (replaceme) => {
-  return replaceme_formatter(Number.parseFloat(Number(replaceme)), 'replaceme')
-    .to('mojo')
+export const goji_to_moji = (goji) => {
+  return goji_formatter(Number.parseFloat(Number(goji)), 'goji')
+    .to('moji')
     .value();
 };
 
-export const mojo_to_replaceme_string = (mojo) => {
-  return replaceme_formatter(Number(mojo), 'mojo').to('replaceme').toString();
+export const moji_to_goji_string = (moji) => {
+  return goji_formatter(Number(moji), 'moji').to('goji').toString();
 };
 
-export const mojo_to_colouredcoin = (mojo) => {
-  return replaceme_formatter(Number.parseInt(mojo), 'mojo')
+export const moji_to_colouredcoin = (moji) => {
+  return goji_formatter(Number.parseInt(moji), 'moji')
     .to('colouredcoin')
     .value();
 };
 
-export const colouredcoin_to_mojo = (colouredcoin) => {
-  return replaceme_formatter(Number.parseFloat(Number(colouredcoin)), 'colouredcoin')
-    .to('mojo')
+export const colouredcoin_to_moji = (colouredcoin) => {
+  return goji_formatter(Number.parseFloat(Number(colouredcoin)), 'colouredcoin')
+    .to('moji')
     .value();
 };
 
-export const mojo_to_colouredcoin_string = (mojo) => {
-  return replaceme_formatter(Number(mojo), 'mojo').to('colouredcoin').toString();
+export const moji_to_colouredcoin_string = (moji) => {
+  return goji_formatter(Number(moji), 'moji').to('colouredcoin').toString();
 };

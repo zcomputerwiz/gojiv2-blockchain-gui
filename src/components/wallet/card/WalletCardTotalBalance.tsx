@@ -5,7 +5,7 @@ import WalletGraph from '../WalletGraph';
 import FarmCard from '../../farm/card/FarmCard';
 import useWallet from '../../../hooks/useWallet';
 import useCurrencyCode from '../../../hooks/useCurrencyCode';
-import { mojo_to_replaceme_string } from '../../../util/replaceme';
+import { moji_to_goji_string } from '../../../util/goji';
 
 const StyledGraphContainer = styled.div`
   margin-left: -1rem;
@@ -32,14 +32,14 @@ export default function WalletCardTotalBalance(props: Props) {
       title={<Trans>Total Balance</Trans>}
       tooltip={
         <Trans>
-          This is the total amount of replaceme in the blockchain at the current peak
+          This is the total amount of goji in the blockchain at the current peak
           sub block that is controlled by your private keys. It includes frozen
           farming rewards, but not pending incoming and outgoing transactions.
         </Trans>
       }
       value={
         <>
-          {mojo_to_replaceme_string(value)} {currencyCode}
+          {moji_to_goji_string(value)} {currencyCode}
         </>
       }
       description={

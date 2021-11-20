@@ -11,7 +11,7 @@ import {
   Loading,
   FormatLargeNumber,
   Link,
-} from '@replaceme/core';
+} from '@goji/core';
 import {
   Box,
   Card,

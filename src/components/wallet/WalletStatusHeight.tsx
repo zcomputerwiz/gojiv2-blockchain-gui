@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { FormatLargeNumber } from '@replaceme/core';
+import { FormatLargeNumber } from '@goji/core';
 import type { RootState } from '../../modules/rootReducer';
 
 export default function WalletStatusHeight() {

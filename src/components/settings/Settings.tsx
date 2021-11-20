@@ -7,7 +7,7 @@ import {
   AlertDialog,
   Flex,
   Card,
-} from '@replaceme/core';
+} from '@goji/core';
 import {
   Grid,
   Typography,

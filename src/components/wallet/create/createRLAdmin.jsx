@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { AlertDialog } from '@replaceme/core';
+import { AlertDialog } from '@goji/core';
 import {
   Typography,
   Button,
@@ -20,7 +20,7 @@ import {
 } from '../../../modules/createWallet';
 import { useStyles } from './WalletCreate';
 import { create_rl_admin_action } from '../../../modules/message';
-import { replaceme_to_mojo } from '../../../util/replaceme';
+import { goji_to_moji } from '../../../util/goji';
 import { openDialog } from '../../../modules/dialog';
 
 export const customStyles = makeStyles((theme) => ({
@@ -76,7 +76,7 @@ export const CreateRLAdminWallet = () => {
   const custom = customStyles();
   const dispatch = useDispatch();
   let interval_input = null;
-  let replacemeper_input = null;
+  let gojiper_input = null;
   let userpubkey_input = null;
   let amount_input = null;
   let fee_input = null;
@@ -104,10 +104,10 @@ export const CreateRLAdminWallet = () => {
       return;
     }
     if (
-      replacemeper_input.value === '' ||
-      Number(replacemeper_input.value) === 0 ||
-      !Number(replacemeper_input.value) ||
-      isNaN(Number(replacemeper_input.value))
+      gojiper_input.value === '' ||
+      Number(gojiper_input.value) === 0 ||
+      !Number(gojiper_input.value) ||
+      isNaN(Number(gojiper_input.value))
     ) {
       dispatch(
         openDialog(
@@ -156,18 +156,18 @@ export const CreateRLAdminWallet = () => {
     dispatch(createState(true, true));
     const interval = interval_input.value;
     const interval_value = Number.parseInt(Number(interval));
-    const replacemeper = replaceme_to_mojo(replacemeper_input.value);
-    const replacemeper_value = Number.parseInt(Number(replacemeper));
+    const gojiper = goji_to_moji(gojiper_input.value);
+    const gojiper_value = Number.parseInt(Number(gojiper));
     const userpubkey = userpubkey_input.value;
-    const amount = replaceme_to_mojo(amount_input.value);
+    const amount = goji_to_moji(amount_input.value);
     const amount_value = Number.parseInt(Number(amount));
-    // var fee = replaceme_to_mojo(fee_input.value);
+    // var fee = goji_to_moji(fee_input.value);
     // TODO(lipa): send fee to server
     // const fee_value = parseInt(Number(fee));
     dispatch(
       create_rl_admin_action(
         interval_value,
-        replacemeper_value,
+        gojiper_value,
         userpubkey,
         amount_value,
       ),
@@ -225,7 +225,7 @@ export const CreateRLAdminWallet = () => {
               color="secondary"
               fullWidth
               inputRef={(input) => {
-                replacemeper_input = input;
+                gojiper_input = input;
               }}
               label={<Trans>Spendable Amount</Trans>}
             />

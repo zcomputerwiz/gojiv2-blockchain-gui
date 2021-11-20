@@ -1,8 +1,8 @@
 {
-    "name": "replaceme-blockchain",
-    "author": "replaceme Network <hello@replaceme.net> (https://replaceme.net/)",
-    "description": "GUI for replaceme Blockchain",
-    "productName": "replaceme Blockchain",
+    "name": "goji-blockchain",
+    "author": "goji Network <hello@goji.net> (https://goji.net/)",
+    "description": "GUI for goji Blockchain",
+    "productName": "goji Blockchain",
     "private": true,
     "homepage": "./",
     "main": "build/electron/main.js",

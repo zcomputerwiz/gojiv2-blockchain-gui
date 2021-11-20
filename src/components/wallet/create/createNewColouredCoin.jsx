@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { AlertDialog } from '@replaceme/core';
+import { AlertDialog } from '@goji/core';
 import {
   Typography,
   Button,
@@ -20,7 +20,7 @@ import {
 } from '../../../modules/createWallet';
 import { useStyles } from './WalletCreate';
 import { create_cc_action } from '../../../modules/message';
-import { replaceme_to_mojo } from '../../../util/replaceme';
+import { goji_to_moji } from '../../../util/goji';
 import { openDialog } from '../../../modules/dialog';
 
 export const customStyles = makeStyles((theme) => ({
@@ -83,8 +83,8 @@ export const CreateNewCCWallet = () => {
       return;
     }
     dispatch(createState(true, true));
-    const amount = replaceme_to_mojo(amount_input.value);
-    const fee = replaceme_to_mojo(fee_input.value);
+    const amount = goji_to_moji(amount_input.value);
+    const fee = goji_to_moji(fee_input.value);
     dispatch(create_cc_action(amount, fee));
   }
 

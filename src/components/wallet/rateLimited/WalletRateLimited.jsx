@@ -13,12 +13,12 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Tooltip } from '@material-ui/core';
 import HelpIcon from '@material-ui/icons/Help';
-import { AlertDialog, Card, Flex } from '@replaceme/core';
+import { AlertDialog, Card, Flex } from '@goji/core';
 import {
   send_transaction,
   rl_set_user_info_action,
 } from '../../../modules/message';
-import { mojo_to_replaceme_string, replaceme_to_mojo } from '../../../util/replaceme';
+import { moji_to_goji_string, goji_to_moji } from '../../../util/goji';
 import { get_transaction_result } from '../../../util/transaction_result';
 import { openDialog } from '../../../modules/dialog';
 import WalletHistory from '../WalletHistory';
@@ -251,17 +251,17 @@ const IncompleteCard = (props) => {
     const ip_debuf = ip_unhex.toString('utf8');
     const ip_parsed = JSON.parse(ip_debuf);
     const interval_input = ip_parsed.interval;
-    const replacemeper_input = ip_parsed.limit;
+    const gojiper_input = ip_parsed.limit;
     const origin_input = ip_parsed.origin_string;
     const admin_pubkey_input = ip_parsed.admin_pubkey;
     const interval_value = Number.parseInt(Number(interval_input));
-    const replacemeper_value = Number.parseInt(Number(replacemeper_input));
+    const gojiper_value = Number.parseInt(Number(gojiper_input));
     const origin_parsed = JSON.parse(origin_input);
     dispatch(
       rl_set_user_info_action(
         id,
         interval_value,
-        replacemeper_value,
+        gojiper_value,
         origin_parsed,
         admin_pubkey_input,
       ),
@@ -399,8 +399,8 @@ const RLDetailsCard = (props) => {
             <Box flexGrow={1}>
               <Typography variant="subtitle1">
                 <Trans>
-                  Spending Limit (replaceme per interval):{' '}
-                  {mojo_to_replaceme_string(limit)}
+                  Spending Limit (goji per interval):{' '}
+                  {moji_to_goji_string(limit)}
                 </Trans>
               </Typography>
             </Box>
@@ -446,8 +446,8 @@ const RLDetailsCard = (props) => {
             <Box flexGrow={1}>
               <Typography variant="subtitle1">
                 <Trans>
-                  Spending Limit (replaceme per interval):{' '}
-                  {mojo_to_replaceme_string(limit)}
+                  Spending Limit (goji per interval):{' '}
+                  {moji_to_goji_string(limit)}
                 </Trans>
               </Typography>
             </Box>
@@ -512,7 +512,7 @@ const BalanceCardSubSection = (props) => {
         </Box>
         <Box>
           <Typography variant="subtitle1">
-            {mojo_to_replaceme_string(props.balance)} {currencyCode}
+            {moji_to_goji_string(props.balance)} {currencyCode}
           </Typography>
         </Box>
       </Box>
@@ -652,8 +652,8 @@ const SendCard = (props) => {
       );
       return;
     }
-    const amount = replaceme_to_mojo(amount_input.value);
-    const fee = replaceme_to_mojo(fee_input.value);
+    const amount = goji_to_moji(amount_input.value);
+    const fee = goji_to_moji(fee_input.value);
 
     if (address.startsWith('0x') || address.startsWith('0X')) {
       address = address.slice(2);

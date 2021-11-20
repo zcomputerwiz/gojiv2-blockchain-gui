@@ -20,7 +20,7 @@ import {
   Loading,
   TooltipIcon,
   Flex,
-} from '@replaceme/core';
+} from '@goji/core';
 import {
   unix_to_short_date,
   hex_to_array,
@@ -28,7 +28,7 @@ import {
   sha256,
 } from '../../util/utils';
 import { getBlockRecord, getBlock } from '../../modules/fullnodeMessages';
-import { mojo_to_replaceme } from '../../util/replaceme';
+import { moji_to_goji } from '../../util/goji';
 import {
   calculatePoolReward,
   calculateBaseFarmerReward,
@@ -172,13 +172,13 @@ export default function Block() {
       ? blockRecord.weight - prevBlockRecord.weight
       : blockRecord?.weight ?? 0;
 
-  const poolReward = mojo_to_replaceme(calculatePoolReward(blockRecord.height));
-  const baseFarmerReward = mojo_to_replaceme(
+  const poolReward = moji_to_goji(calculatePoolReward(blockRecord.height));
+  const baseFarmerReward = moji_to_goji(
     calculateBaseFarmerReward(blockRecord.height),
   );
 
-  const replacemeFees = blockRecord.fees
-    ? mojo_to_replaceme(BigInt(blockRecord.fees))
+  const gojiFees = blockRecord.fees
+    ? moji_to_goji(BigInt(blockRecord.fees))
     : '';
 
   const rows = [
@@ -269,7 +269,7 @@ export default function Block() {
       value: (
         <Link
           target="_blank"
-          href={`https://www.replacemeexplorer.com/blockchain/puzzlehash/${blockRecord.farmer_puzzle_hash}`}
+          href={`https://www.gojiexplorer.com/blockchain/puzzlehash/${blockRecord.farmer_puzzle_hash}`}
         >
           {currencyCode
             ? toBech32m(
@@ -285,7 +285,7 @@ export default function Block() {
       value: (
         <Link
           target="_blank"
-          href={`https://www.replacemeexplorer.com/blockchain/puzzlehash/${blockRecord.pool_puzzle_hash}`}
+          href={`https://www.gojiexplorer.com/blockchain/puzzlehash/${blockRecord.pool_puzzle_hash}`}
         >
           {currencyCode
             ? toBech32m(
@@ -320,7 +320,7 @@ export default function Block() {
     },
     {
       name: <Trans>Fees Amount</Trans>,
-      value: replacemeFees ? `${replacemeFees} ${currencyCode}` : '',
+      value: gojiFees ? `${gojiFees} ${currencyCode}` : '',
       tooltip: (
         <Trans>
           The total transactions fees in this block. Rewarded to the farmer.
@@ -335,7 +335,7 @@ export default function Block() {
         title={
           <Back variant="h5">
             <Trans>
-              Block at height {blockRecord.height} in the replaceme blockchain
+              Block at height {blockRecord.height} in the goji blockchain
             </Trans>
           </Back>
         }

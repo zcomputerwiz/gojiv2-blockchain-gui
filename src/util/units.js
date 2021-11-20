@@ -1,21 +1,21 @@
 const units = {
-  replaceme: 1,
-  mojo: 1 / 1e12,
+  goji: 1,
+  moji: 1 / 1e12,
   colouredcoin: 1 / 1e9,
 };
 
 const aliases = {
-  replaceme: ['ch', 'replaceme', 'replaceme'],
-  mojo: ['mj', 'mojo'],
+  goji: ['ch', 'goji', 'goji'],
+  moji: ['mj', 'moji'],
   colouredcoin: ['cc', 'colouredcoin'],
 };
 
 const display = {
-  replaceme: {
+  goji: {
     format: '{amount} CH',
     fractionDigits: 12,
   },
-  mojo: {
+  moji: {
     format: '{amount} MJ',
     fractionDigits: 0,
   },

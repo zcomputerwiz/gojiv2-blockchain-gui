@@ -1,4 +1,4 @@
-export { default as replaceme } from './replaceme';
+export { default as goji } from './goji';
 export { default as Farm } from './Farm';
 export { default as Home } from './Home';
 export { default as Keys } from './Keys';

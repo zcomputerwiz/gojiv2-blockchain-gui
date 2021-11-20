@@ -1,12 +1,12 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
 import { Box, Tooltip, Typography } from '@material-ui/core';
-import { Card, CopyToClipboard, Flex, Table } from '@replaceme/core';
+import { Card, CopyToClipboard, Flex, Table } from '@goji/core';
 import type { Row } from '../core/components/Table/Table';
 import {
-  mojo_to_replaceme_string,
-  mojo_to_colouredcoin_string,
-} from '../../util/replaceme';
+  moji_to_goji_string,
+  moji_to_colouredcoin_string,
+} from '../../util/goji';
 import { unix_to_short_date } from '../../util/utils';
 import TransactionType from '../../constants/TransactionType';
 import WalletType from '../../constants/WalletType';
@@ -57,12 +57,12 @@ const getCols = (type: WalletType) => [
   {
     field: (row: Row) =>
       type === WalletType.COLOURED_COIN
-        ? mojo_to_colouredcoin_string(row.amount)
-        : mojo_to_replaceme_string(row.amount),
+        ? moji_to_colouredcoin_string(row.amount)
+        : moji_to_goji_string(row.amount),
     title: <Trans>Amount</Trans>,
   },
   {
-    field: (row: Row) => mojo_to_replaceme_string(row.fee_amount),
+    field: (row: Row) => moji_to_goji_string(row.fee_amount),
     title: <Trans>Fee</Trans>,
   },
 ];

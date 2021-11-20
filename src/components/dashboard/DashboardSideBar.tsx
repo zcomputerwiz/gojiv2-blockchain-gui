@@ -11,8 +11,8 @@ import {
   Plot as PlotIcon,
   Pool as PoolIcon,
   Settings as SettingsIcon,
-} from '@replaceme/icons';
-import { Flex, SideBarItem } from '@replaceme/core';
+} from '@goji/icons';
+import { Flex, SideBarItem } from '@goji/core';
 import { logOut } from '../../modules/message';
 import { RootState } from '../../modules/rootReducer';
 
