@@ -2616,7 +2616,7 @@ msgstr "Címzett"
 msgid "Total Balance"
 msgstr "Teljes egyenleg"
 
-#: src/components/farm/card/FarmCardTotalgojiFarmed.tsx:15
+#: src/components/farm/card/FarmCardTotalGojiFarmed.tsx:15
 #~ msgid "Total goji Farmed"
 #~ msgstr ""
 
@@ -3085,7 +3085,7 @@ msgstr ""
 msgid "{currencyCode} Block Rewards"
 msgstr "Blokk jutalmak {currencyCode}"
 
-#: src/components/farm/card/FarmCardTotalgojiFarmed.tsx:29
+#: src/components/farm/card/FarmCardTotalGojiFarmed.tsx:29
 msgid "{currencyCode} Total goji Farmed"
 msgstr "Teljes farmolt goji mennyiség {currencyCode}"
 

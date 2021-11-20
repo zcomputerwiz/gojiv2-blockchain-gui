@@ -6,7 +6,7 @@ import FarmCard from './FarmCard';
 import { moji_to_goji } from '../../../util/goji';
 import useCurrencyCode from '../../../hooks/useCurrencyCode';
 
-export default function FarmCardTotalgojiFarmed() {
+export default function FarmCardTotalGojiFarmed() {
   const currencyCode = useCurrencyCode();
 
   const loading = useSelector(

@@ -2338,7 +2338,7 @@ msgstr "ถึง"
 msgid "Total Balance"
 msgstr "ยอดคงเหลือทั้งหมด"
 
-#: src/components/farm/card/FarmCardTotalgojiFarmed.tsx:15
+#: src/components/farm/card/FarmCardTotalGojiFarmed.tsx:15
 #~ msgid "Total goji Farmed"
 #~ msgstr ""
 
@@ -2743,7 +2743,7 @@ msgstr "{0} คะแนน {1} - {2} ชั่วโมงที่แล้ว
 msgid "{currencyCode} Block Rewards"
 msgstr "{currencyCode} บล็อกรางวัล"
 
-#: src/components/farm/card/FarmCardTotalgojiFarmed.tsx:29
+#: src/components/farm/card/FarmCardTotalGojiFarmed.tsx:29
 msgid "{currencyCode} Total goji Farmed"
 msgstr "{currencyCode} goji ที่ฟาร์มแล้ว"
 
