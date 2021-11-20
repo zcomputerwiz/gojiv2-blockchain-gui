@@ -1,5 +1,5 @@
 # goji-blockchain
-![Alt text](https://www.goji.net/img/goji_logo.svg)
+![Alt text](https://www.getgoji.net/img/goji_logo.svg)
 
 ![GitHub contributors](https://img.shields.io/github/contributors/goji-Network/goji-blockchain?logo=GitHub)
 
