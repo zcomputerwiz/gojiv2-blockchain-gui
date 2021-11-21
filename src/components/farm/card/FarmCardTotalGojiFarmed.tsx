@@ -17,7 +17,7 @@ export default function FarmCardTotalGojiFarmed() {
     (state: RootState) => state.wallet_state.farmed_amount?.farmed_amount,
   );
 
-  const totalgojiFarmed = useMemo(() => {
+  const totalGojiFarmed = useMemo(() => {
     if (farmedAmount !== undefined) {
       const val = BigInt(farmedAmount.toString());
       return moji_to_goji(val);
@@ -27,7 +27,7 @@ export default function FarmCardTotalGojiFarmed() {
   return (
     <FarmCard
       title={<Trans>{currencyCode} Total goji Farmed</Trans>}
-      value={totalgojiFarmed}
+      value={totalGojiFarmed}
       loading={loading}
     />
   );

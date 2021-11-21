@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Box, BoxProps } from '@material-ui/core';
 import { goji } from '@goji/icons';
 
-const Styledgoji = styled(goji)`
+const StyledGoji = styled(goji)`
   max-width: 100%;
   width: auto;
   height: auto;
@@ -12,7 +12,7 @@ const Styledgoji = styled(goji)`
 export default function Logo(props: BoxProps) {
   return (
     <Box {...props}>
-      <Styledgoji />
+      <StyledGoji />
     </Box>
   );
 }

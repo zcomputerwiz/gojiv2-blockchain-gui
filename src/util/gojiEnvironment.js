@@ -45,7 +45,7 @@ const getExecutablePath = (dist_file) => {
   return path.join(__dirname, PY_MAC_DIST_FOLDER, dist_file);
 };
 
-const getgojiVersion = () => {
+const getGojiVersion = () => {
   let version = null;
   const exePath = getExecutablePath('goji');
   // first see if we can get a goji exe in a standard location relative to where we are
@@ -71,7 +71,7 @@ const getgojiVersion = () => {
   return version;
 };
 
-const startgojiDaemon = () => {
+const startGojiDaemon = () => {
   let script = getScriptPath(PY_DIST_FILE);
   let processOptions = {};
   //processOptions.detached = true;
@@ -138,7 +138,7 @@ const startgojiDaemon = () => {
 };
 
 module.exports = {
-  startgojiDaemon,
-  getgojiVersion,
+  startGojiDaemon,
+  getGojiVersion,
   guessPackaged,
 };
