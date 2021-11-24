@@ -26,7 +26,7 @@ export default function FarmCardTotalGojiFarmed() {
 
   return (
     <FarmCard
-      title={<Trans>{currencyCode} Total goji Farmed</Trans>}
+      title={<Trans>{currencyCode} Total Goji Farmed</Trans>}
       value={totalGojiFarmed}
       loading={loading}
     />
