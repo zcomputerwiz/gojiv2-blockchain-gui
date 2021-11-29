@@ -36,8 +36,8 @@ msgstr "'n Stroper (Harvester) is 'n robot wat werk op dieselfde masjien wat lan
 
 #: src/electron/main.tsx:365
 #: src/electron/main.tsx:443
-msgid "About goji Blockchain"
-msgstr "Inligting oor goji Blockchain"
+msgid "About Goji Blockchain"
+msgstr "Inligting oor Goji Blockchain"
 
 #: src/components/trading/ViewOffer.jsx:85
 msgid "Accept"
@@ -272,8 +272,8 @@ msgid "goji"
 msgstr "goji"
 
 #: src/electron/main.tsx:312
-msgid "goji Blockchain Wiki"
-msgstr "goji Blockchain Wiki"
+msgid "Goji Blockchain Wiki"
+msgstr "Goji Blockchain Wiki"
 
 #: src/components/wallet/Wallets.tsx:32
 msgid "goji Wallet"

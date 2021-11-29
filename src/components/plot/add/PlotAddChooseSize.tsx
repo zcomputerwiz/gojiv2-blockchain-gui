@@ -80,7 +80,7 @@ export default function PlotAddChooseSize(props: Props) {
           }
           <Link
             target="_blank"
-            href="https://github.com/goji-Network/goji-blockchain/wiki/k-sizes"
+            href="https://github.com/Goji-Network/goji-blockchain/wiki/k-sizes"
           >
             Learn more
           </Link>

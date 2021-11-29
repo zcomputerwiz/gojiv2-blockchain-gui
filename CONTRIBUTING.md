@@ -6,10 +6,10 @@ We are happy that you are taking a look at the code for goji, a proof of space a
 A lot of fascinating new cryptography and blockchain concepts are used and implemented here.
 This repo includes the code for the goji GUI in electron/react and TypeScript.
 
-It is an input to the [goji-blockchain](https://github.com/goji-Network/goji-blockchain) repository which also includes a verifiable delay function implementation that it imports from the [gojivdf repo](https://github.com/goji-Network/gojivdf) (in c/c++), and a proof of space implementation that it imports from the [gojipos repo](https://github.com/goji-Network/gojipos). BLS signatures are imported from the [bls-signatures repo](https://github.com/goji-Network/bls-signatures) as blspy. There is an additional dependency on the [gojibip158 repo](https://github.com/goji-Network/gojibip158).
+It is an input to the [goji-blockchain](https://github.com/Goji-Network/goji-blockchain) repository which also includes a verifiable delay function implementation that it imports from the [gojivdf repo](https://github.com/Goji-Network/gojivdf) (in c/c++), and a proof of space implementation that it imports from the [gojipos repo](https://github.com/Goji-Network/gojipos). BLS signatures are imported from the [bls-signatures repo](https://github.com/Goji-Network/bls-signatures) as blspy. There is an additional dependency on the [gojibip158 repo](https://github.com/Goji-Network/gojibip158).
 For major platforms, binary and source wheels are shipped to PyPI from each dependent repo and then goji-blockchain can pip install those from PyPI or they can be prepackaged as is done for the Windows and MacOS installer. On unsupported platforms, pip will fall back to the source distributions to be compiled locally.
 
-If you want to learn more about this project, read the [wiki](https://github.com/goji-Network/goji-blockchain/wiki), or check out the [green paper](https://www.getgoji.net/assets/gojiGreenPaper.pdf).
+If you want to learn more about this project, read the [wiki](https://github.com/Goji-Network/goji-blockchain/wiki), or check out the [green paper](https://www.getgoji.net/assets/gojiGreenPaper.pdf).
 
 ## Contributions
 

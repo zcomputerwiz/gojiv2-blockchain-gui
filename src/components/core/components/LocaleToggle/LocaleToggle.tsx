@@ -43,7 +43,7 @@ export default function LocaleToggle(props: Props) {
     handleClose();
 
     openExternal(
-      'https://github.com/goji-Network/goji-blockchain-gui/tree/main/src/locales/README.md',
+      'https://github.com/Goji-Network/goji-blockchain-gui/tree/main/src/locales/README.md',
     );
   }
 

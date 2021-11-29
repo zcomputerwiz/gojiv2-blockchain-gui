@@ -364,10 +364,10 @@ if (!handleSquirrelEvent()) {
         role: 'help',
         submenu: [
           {
-            label: i18n._(/* i18n */ { id: 'goji Blockchain Wiki' }),
+            label: i18n._(/* i18n */ { id: 'Goji Blockchain Wiki' }),
             click: () => {
               openExternal(
-                'https://github.com/goji-Network/goji-blockchain/wiki',
+                'https://github.com/Goji-Network/goji-blockchain/wiki',
               );
             },
           },
@@ -375,7 +375,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Frequently Asked Questions' }),
             click: () => {
               openExternal(
-                'https://github.com/goji-Network/goji-blockchain/wiki/FAQ',
+                'https://github.com/Goji-Network/goji-blockchain/wiki/FAQ',
               );
             },
           },
@@ -383,7 +383,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Release Notes' }),
             click: () => {
               openExternal(
-                'https://github.com/goji-Network/goji-blockchain/releases',
+                'https://github.com/Goji-Network/goji-blockchain/releases',
               );
             },
           },
@@ -391,7 +391,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Contribute on GitHub' }),
             click: () => {
               openExternal(
-                'https://github.com/goji-Network/goji-blockchain/blob/master/CONTRIBUTING.md',
+                'https://github.com/Goji-Network/goji-blockchain/blob/master/CONTRIBUTING.md',
               );
             },
           },
@@ -402,7 +402,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Report an Issue...' }),
             click: () => {
               openExternal(
-                'https://github.com/goji-Network/goji-blockchain/issues',
+                'https://github.com/Goji-Network/goji-blockchain/issues',
               );
             },
           },
@@ -423,12 +423,12 @@ if (!handleSquirrelEvent()) {
     ];
 
     if (process.platform === 'darwin') {
-      // goji Blockchain menu (Mac)
+      // Goji Blockchain menu (Mac)
       template.unshift({
         label: i18n._(/* i18n */ { id: 'goji' }),
         submenu: [
           {
-            label: i18n._(/* i18n */ { id: 'About goji Blockchain' }),
+            label: i18n._(/* i18n */ { id: 'About Goji Blockchain' }),
             click: () => {
               openAbout();
             },
@@ -515,7 +515,7 @@ if (!handleSquirrelEvent()) {
           type: 'separator',
         },
         {
-          label: i18n._(/* i18n */ { id: 'About goji Blockchain' }),
+          label: i18n._(/* i18n */ { id: 'About Goji Blockchain' }),
           click() {
             openAbout();
           },

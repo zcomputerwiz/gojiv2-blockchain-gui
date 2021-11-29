@@ -114,7 +114,7 @@ export default function About(props: Props) {
         </StyledLink>
         <StyledSubTitle>{description}</StyledSubTitle>
         <Spacer />
-        <div className="copyright">Copyright (c) 2021 goji Network</div>
+        <div className="copyright">Copyright (c) 2021 Goji Network</div>
         <Spacer />
         <VersionsTable>
           {versions?.electron && (
@@ -144,7 +144,7 @@ export default function About(props: Props) {
         </VersionsTable>
 
         <BugReport
-          href="https://github.com/goji-Network/goji-blockchain/issues"
+          href="https://github.com/Goji-Network/goji-blockchain/issues"
           target="_blank"
         >
           Report an issue

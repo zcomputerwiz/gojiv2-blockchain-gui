@@ -15,10 +15,10 @@ function getInstallerConfig () {
 
   return Promise.resolve({
     appDirectory: path.join(rootPath, 'goji-win32-x64'),
-    authors: 'goji Network',
+    authors: 'Goji Network',
     version: process.env.goji_INSTALLER_VERSION,
     noMsi: true,
-    iconUrl: 'https://raw.githubusercontent.com/goji-Network/goji-blockchain/master/electron-react/src/assets/img/goji.ico',
+    iconUrl: 'https://raw.githubusercontent.com/Goji-Network/goji-blockchain/master/electron-react/src/assets/img/goji.ico',
     outputDirectory: path.join(outPath, 'windows-installer'),
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,

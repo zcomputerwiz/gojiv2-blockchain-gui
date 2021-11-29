@@ -15,7 +15,7 @@ msgstr ""
 "X-Crowdin-Project: goji-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: ar\n"
-"X-Crowdin-File: /[goji-Network.goji-blockchain-gui] main/src/locales/en-US/messages.po\n"
+"X-Crowdin-File: /[Goji-Network.goji-blockchain-gui] main/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 118\n"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:78
@@ -60,8 +60,8 @@ msgstr ""
 
 #: src/electron/main.tsx:431
 #: src/electron/main.tsx:518
-msgid "About goji Blockchain"
-msgstr "معلومات عن goji Blockchain"
+msgid "About Goji Blockchain"
+msgstr "معلومات عن Goji Blockchain"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -359,8 +359,8 @@ msgid "goji"
 msgstr "goji"
 
 #: src/electron/main.tsx:367
-msgid "goji Blockchain Wiki"
-msgstr "goji Blockchain Wiki"
+msgid "Goji Blockchain Wiki"
+msgstr "Goji Blockchain Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:642
 msgid "goji Wallet"
