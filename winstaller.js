@@ -23,7 +23,7 @@ function getInstallerConfig () {
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,
     exe: 'goji.exe',
-    setupExe: 'gojiSetup-' + process.env.goji_INSTALLER_VERSION + '.exe',
+    setupExe: 'GojiSetup-' + process.env.goji_INSTALLER_VERSION + '.exe',
     setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'goji.ico')
   })
 }
